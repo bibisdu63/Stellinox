@@ -32,6 +32,9 @@ public class FenetreConnexion extends JFrame {
 	   public JButton retour;
 	   private static final long serialVersionUID = -7843466605812479973L;
 
+	   /**
+	    * constructeur de la fênetre de connexion
+	    */
 	   public FenetreConnexion()
 	   {
 		 this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -68,6 +71,10 @@ public class FenetreConnexion extends JFrame {
 	     setLocationRelativeTo(null);
 	   }
 
+	   /**
+	    * fonction permettant de construire le panel de bouton
+	    * @return le panel remplit des 2 boutons
+	    */
 	private JPanel connectionButton() {
 		JPanel bouton = new JPanel(new GridLayout(1, 2));
 		 JPanel ssval = new JPanel(new FlowLayout());
@@ -84,6 +91,10 @@ public class FenetreConnexion extends JFrame {
 		return bouton;
 	}
 
+	/**
+	 * fonction permmettant de construire le panel contenant le titre de la fenetre
+	 * @return panel contenant le titre
+	 */
 	private JPanel connectionTitle() {
 		JPanel Titre = new JPanel(new GridLayout(1, 1));
 	     JLabel titre = new JLabel("Connexion");
@@ -94,6 +105,11 @@ public class FenetreConnexion extends JFrame {
 		return Titre;
 	}
 
+	/**
+	 * fonction permettant de construire le panel du mot de passe
+	 * @param police police du panel
+	 * @return panel contenant la getion du mot de passe
+	 */
 	private JPanel connectionPassword(Font police) {
 		JPanel mdp = new JPanel(new BorderLayout());
 	     JPanel ssmdp = new JPanel(new FlowLayout());
@@ -101,7 +117,6 @@ public class FenetreConnexion extends JFrame {
 	     this.pass.setPreferredSize(new Dimension(30, 30));
 	     ssmdp.add(this.pass);
 	     this.messpass = new JLabel("mot de passe :      ");
-
 	     this.pass.setFont(police);
 	     this.pass.setPreferredSize(new Dimension(150, 30));
 	     this.pass.setForeground(Color.BLUE);
@@ -110,6 +125,11 @@ public class FenetreConnexion extends JFrame {
 		return mdp;
 	}
 
+	/**
+	 * fonction permettant de construire le panel du nom d'utilisateur
+	 * @param police police du panel
+	 * @return panel contenant la gestion du nom d'utilisateur
+	 */
 	private JPanel connectionPseudo(Font police) {
 		JPanel pseud = new JPanel(new BorderLayout());
 	     JPanel sspseudo = new JPanel(new FlowLayout());
@@ -126,6 +146,11 @@ public class FenetreConnexion extends JFrame {
 		return pseud;
 	}
 
+	/**
+	 * fonction permettant de construire le panel du port
+	 * @param police police du panel
+	 * @return panel contenant la gestion du nom d'utilisateur
+	 */
 	private JPanel connectionPort(Font police) {
 		JPanel por = new JPanel(new BorderLayout());
 	     JPanel ssport = new JPanel(new FlowLayout());
@@ -142,6 +167,11 @@ public class FenetreConnexion extends JFrame {
 		return por;
 	}
 
+	/**
+	 * fonction permettant de construire le panel de l'adresse de la base de donnée
+	 * @param police police du panel
+	 * @return contenant la gestion du nom d'utilisateur
+	 */
 	private JPanel connectionAdress(Font police) {
 		JPanel addresse = new JPanel(new BorderLayout());
 	     JPanel ssadress = new JPanel(new FlowLayout());

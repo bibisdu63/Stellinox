@@ -16,7 +16,7 @@ public class ActionQuitter extends AbstractAction{
 	public ActionQuitter(JFrame maFenetre) {
 		this.maFenetre = maFenetre;
 	}
-	@Override
+	
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
 		
