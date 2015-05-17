@@ -18,7 +18,7 @@ public class ActionQuitter extends AbstractAction{
 	}
 	
 	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
+		maFenetre.dispose();
 		
 	}
 

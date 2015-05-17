@@ -28,12 +28,12 @@ public class FenetreConnexion extends JFrame {
 	   private JLabel messpseudo;
 	   private JPasswordField pass;
 	   private JLabel messpass;
-	   public JButton valider;
-	   public JButton retour;
+	   private JButton valider;
+	   private JButton retour;
 	   private static final long serialVersionUID = -7843466605812479973L;
 
 	   /**
-	    * constructeur de la fênetre de connexion
+	    * constructeur de la fênetre de connexionw
 	    */
 	   public FenetreConnexion()
 	   {
